@@ -1,0 +1,374 @@
+extends base
+
+block append head
+    script(defer src='/js/scriptHome.js')
+
+block content
+    header  
+        nav.nav
+            ul.nav-links
+                li
+                    a.nav-item(href='#id-product') PRODUCT
+                li
+                    a.nav-item(href='#id-activity') ACTIVITY
+                li
+                    a.nav-item(href='#id-catalog') CATALOG
+                li
+                    a.nav-item(href='#id-about') ABOUT US
+    main
+        section.section-hero
+            .hero-text
+                p.heading-primary.margin-bottom-small We export 
+                    br
+                    | Indonesia-origin
+                    br
+                    span.highlight Nutmeg
+                a(href='#' class='btnMain btnMain__green margin-right-small') Contact Us
+                a(href='mailto:office@celexport.com' target='_blank')
+                    svg(class='social__icon social__icon--email')
+                        use(xlink:href='./img/social.svg#email')
+                a(href='https://wa.me/6283138256440?text=Hello%20Celexport!' target='_blank')
+                    svg(class='social__icon social__icon--whatsapp')
+                        use(xlink:href='./img/social.svg#whatsapp-3')
+                a(href='https://linkedin.com/company/celexport' target='_blank')
+                    svg(class='social__icon social__icon--linkedin')
+                        use(xlink:href='./img/social.svg#linkedin')
+            .hero-image
+                img(src='./img/nutmeg-hero.jpg' alt='Nutmeg Hero')
+                // <img srcset="img/nutmeg-header.jpg 150w, img/nutmeg-hero.jpg 250w" sizes="(max-width: 37.5em) 40vw, (max-width: 56.25em) 26vw", 250px alt="Mace">
+        section#id-product.section-product
+            h3.heading-three OUR PRODUCT
+            h2.heading-two.margin-bottom-medium Aflatoxin guarantee and non-pesticide
+            .showcase
+                .showProduct
+                    p(class='showProduct showProduct__tag') nutmeg 
+                        span.highlight ABCD
+                    img(src='./img/ABCD.png' class='showProduct showProduct__img showProduct__img--1' alt='abcd1')
+                    img(src='./img/abcd2.png' class='showProduct showProduct__img showProduct__img--2' alt='abcd2')
+                    p(class='showProduct showProduct__text') This type of Nutmeg has a smooth surface without any defect. It is commonly used as a standard in food industry.
+                .table.flexColumn
+                    table
+                        tbody
+                            tr
+                                th Name:
+                                td Nutmeg, neither crushed nor ground
+                            tr
+                                th HS code:
+                                td 090811
+                            tr
+                                th Origin:
+                                td Maluku, Indonesia
+                            tr
+                                th Quality:
+                                td
+                                    | 1. Grade: ABCD
+                                    br
+                                    | 2. Shape: Whole Around, Round, Semi-oval
+                                    br
+                                    | 3. Moisture: 10% Max
+                                    br
+                                    | 4. Aflatoxin B1: 5μg / Kg Max
+                                    br
+                                    | 5. Sum of Aflatoxin B1, B2, G1, G2: 10μg / Kg Max
+                                    br
+                                    | 6. Impurity: 5% Max
+                                    br
+                                    | 7. Avg. Weight (gram): 5 - 7.5 (Relatively Heavy)
+                                    br
+                            tr
+                                th Loading:
+                                td
+                                    | Container 20&apos; STD: 14 Tons
+                                    br
+                                    | Container 40&apos; STD: 23 Tons
+                            tr
+                                th Packing:
+                                td Gunny Bag, 50 Kg
+                            tr
+                                th Leadtime:
+                                td 30 - 35 days
+                    a(href='/api/v1/quote' class='btnMain btnMain__orange margin-right-small' target='_blank') Get Price
+            .showcase
+                .showProduct
+                    p(class='showProduct showProduct__tag') nutmeg 
+                        span.highlight SS
+                    img(src='./img/SS.png' class='showProduct showProduct__img showProduct__img--1' alt='ss1')
+                    img(src='./img/ss2.png' class='showProduct showProduct__img showProduct__img--2' alt='ss2')
+                    p(class='showProduct showProduct__text') Characterized by its distinct look where it has wrinkled surface. Commonly used for grinding into ground nutmeg.
+                .table.flexColumn
+                    table
+                        tbody
+                            tr
+                                th Name:
+                                td Nutmeg, neither crushed nor ground
+                            tr
+                                th HS code:
+                                td 090811
+                            tr
+                                th Origin:
+                                td Maluku, Indonesia
+                            tr
+                                th Quality:
+                                td
+                                    | 1. Grade: SS (Sound Shriveled)
+                                    br
+                                    | 2. Shape: Not Whole Around,  Round, Semi-oval
+                                    br
+                                    | 3. Moisture: 10% Max
+                                    br
+                                    | 4. Aflatoxin B1: 5μg / Kg Max
+                                    br
+                                    | 5. Sum of Aflatoxin B1, B2, G1, G2: 10μg / Kg Max
+                                    br
+                                    | 6. Impurity: 5% Max
+                                    br
+                                    | 7. Avg. Weight (gram): 3.7 - 4.9 (Relatively Light)
+                                    br
+                            tr
+                                th Loading:
+                                td
+                                    | Container 20&apos; STD: 13 Tons
+                                    br
+                                    | Container 40&apos; STD: 22 Tons
+                            tr
+                                th Packing:
+                                td Gunny Bag, 50 Kg
+                            tr
+                                th Leadtime:
+                                td 35 - 40 days
+                    a.btnSecond.margin-right-small(href='#') Get Sample
+            .showcase
+                #id-catalog.showProduct
+                    p(class='showProduct showProduct__tag') nutmeg 
+                        span.highlight BWP
+                    img(src='./img/BWP.png' class='showProduct showProduct__img showProduct__img--1' alt='bwp1')
+                    img(src='./img/bwp2.png' class='showProduct showProduct__img showProduct__img--2' alt='bwp2')
+                    p(class='showProduct showProduct__text') This quality is in split form or defect. Commonly processed into essentials oils, nutmeg’s oleoresin, nutmeg butter, or ground nutmeg.
+                .table.flexColumn
+                    table
+                        tbody
+                            tr
+                                th Name:
+                                td Nutmeg, neither crushed nor ground
+                            tr
+                                th HS code:
+                                td 090811
+                            tr
+                                th Origin:
+                                td Maluku, Indonesia
+                            tr
+                                th Quality:
+                                td
+                                    | 1. Grade: BWP (Broken, Wormy, Punctured)
+                                    br
+                                    | 2. Shape: Broken, Punctured
+                                    br
+                                    | 3. Moisture: 10% Max
+                                    br
+                                    | 4. Aflatoxin B1: 5μg / Kg Max
+                                    br
+                                    | 5. Sum of Aflatoxin B1, B2, G1, G2: 10μg / Kg Max
+                                    br
+                                    | 6. Avg. Weight (gram): &lt; 3.7 (Light)
+                                    br
+                            tr
+                                th Loading:
+                                td
+                                    | Container 20&apos; STD: 13 Tons
+                                    br
+                                    | Container 40&apos; STD: 22 Tons
+                            tr
+                                th Packing:
+                                td Gunny Bag, 50 Kg
+                            tr
+                                th Leadtime:
+                                td 35 - 40 days
+                    a.btnSecond.margin-right-small(href='#') Get Catalog
+        section#id-activity.section-activity
+            h3.heading-three OUR ACTIVITIES
+            h2.heading-two We preserve high quality for long-term sustainability
+            .slider
+                .slide
+                    .slideBox
+                        img(src='./img/slide1.jpg' alt='fotoslide')
+                        span Unloading commodity after direct procurement from farmers
+                .slide
+                    .slideBox
+                        img(src='./img/slide2.jpg' alt='fotoslide')
+                        span Ready bulk at warehouse for several further treatment
+                .slide
+                    .slideBox
+                        img(src='./img/slide3.jpeg' alt='fotoslide')
+                        span The young and mature unshelled nutmeg covered with mace comparison
+                .slide
+                    .slideBox
+                        img(src='./img/slide4.jpg' alt='fotoslide')
+                        span Drying process for Shelled Nutmeg. Indoor, using air fan
+                .slide
+                    .slideBox
+                        img(src='./img/slide5.jpg' alt='fotoslide')
+                        span Manual sorting process for quality requirement
+                .slide
+                    .slideBox
+                        img(src='./img/slide6.jpg' alt='fotoslide')
+                        span Grading for quality process for Nutmeg ABCD, SS, and BWP
+                .slide
+                    .slideBox
+                        img(src='./img/slide7.jpeg' alt='fotoslide')
+                        span Storing ready ship product while maintaining moisture content
+                .slide
+                    .slideBox
+                        img(src='./img/slide8.jpg' alt='fotoslide')
+                        span Bags of sample for laboratorium analysis
+                .slide
+                    .slideBox
+                        img(src='./img/slide9.jpeg' alt='fotoslide')
+                        span Sending out samples for buyer request
+                .slide
+                    .slideBox
+                        img(src='./img/slide10.jpg' alt='fotoslide')
+                        span Packing using 50Kg gunny bag for long-haul shipment
+                button(class='slider__btn slider__btn--left') &larr;
+                button(class='slider__btn slider__btn--right') &rarr;
+            .presentation
+                div(class='presentation__text')
+                    p
+                        | Our land is inherited by the ancestors for a hundred years. Since the plantation
+                        | is surrounded by fertile volcanic soil, it grows naturally 
+                        span.highlight without any harmful pesticides.
+                        br
+                        br
+                        | Although we are a small community and the cultivation is still done traditionally.
+                        | In the future we are aiming to perform:
+                        br
+                        br
+                        | 1. Good Agricultre Practice (GAP)
+                        br
+                        | 2. Good Manufacturing Practice (GMP)
+                        br
+                        | 3. Good Handling Practice (GHP)
+                div(class='presentation__video')
+                    img(src='./img/presentation.jpg' alt='Presentation')
+                    //- iframe(src='https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6784623147527364608' height= width= frameborder='0' title='Embedded post')
+        section#id-about.section-about
+            h3.heading-three ABOUT US
+            h2.heading-two.margin-bottom-medium Originally Maluku, Indonesia. The prominent land of spices
+            .tab
+                div(class='tab__button-container')
+                    button(class='btnTab btn__tab btn__tab--1 btn__tab--active' data-tab='1')
+                        span OUR STORY
+                    button(class='btnTab btn__tab btn__tab--2' data-tab='2')
+                        span OUR COMPANY
+                    button(class='btnTab btn__tab btn__tab--3' data-tab='3')
+                        span OUR TEAM
+                div(class='tab__content tab__content--1 tab__content--active')
+                    p In the 16th century, the 
+                        span.highlight Moluccas (Maluku) 
+                        | were nicknamed the &quot;Spice Islands&quot;. This was due to the
+                        | large number of spices that grew on this archipelago.
+                        br
+                        br
+                        | Today more than 2.1 million people live on the islands. The main habitants are Ternate, Tidore, 
+                        | and Halmahera.
+                        br
+                        br
+                        span.highlight Nutmeg 
+                        | and 
+                        span.highlight Cloves 
+                        | largely drove the spice trade. These two widely-used spices are originally
+                        | native to this group of islands.
+                    img(src='./img/maluku_islands.png' alt='Maluku Map')
+                div(class='tab__content tab__content--2')
+                    p
+                        span.highlight PT. Celexport Pammase International 
+                        | established in 2020 is a spices trading company incorporated in Jakarta,
+                        | Indonesia.
+                        br
+                        br
+                        | We are engaged in the procurement, processing, marketing, and supply of 
+                        span.highlight Nutmeg 
+                        | 
+                        | and 
+                        span.highlight Cloves
+                        | .
+                        br
+                        br
+                        | We wish you pleasant reading and trust that our presentation will contribute to an even better 
+                        | understanding of our company, our strategy, and our philosophy.
+                        br
+                        br
+                        a(href='https://maps.google.com/maps?ll=-6.221964,106.783487&z=14&t=m&hl=en&gl=ID&mapclient=embed&cid=3769376898628241423' target='_blank') See our address on Google Map →
+                                // <img src="./img/logoorange1.png" alt="Logo">
+                    button.btnSecond Get License
+                div(class='tab__content tab__content--3')
+                    div
+                        p
+                            b Muhammad Akbar
+                            br
+                            | Managing Director
+                            br
+                            em akbar@celexport.com
+                            br
+                            br
+                            b DRH Subaedy Yusuf
+                            br
+                            | Supply &amp; Chain Director
+                            br
+                            em drhsubaedy@gmail.com
+                    div
+                        p
+                            b Muhammad Irsyad
+                            br
+                            | Sales Director
+                            br
+                            em ershad.cairo@gmail.com
+                            br
+                            br
+                            b Agus Salim Suherman
+                            br
+                            | Marketing Director
+                            br
+                            em agussalimsuherman690@gmail.com
+            .partners
+                img(src='./img/partner1.png' alt='Trade with Indonesia')
+                img(src='./img/partner2.png' alt='Ministry of Trade')
+                img(src='./img/partner3.png' alt='Barantan')
+                img(src='./img/partner4.png' alt='Sucofindo')
+                img(src='./img/partner5.png' alt='Halifuru')
+        section.section-cta
+            h2.heading-two.margin-bottom-tiny We frequently updating the price
+            a(href='/api/v1/quote' class='btnMain btnMain__orange' target='_blank') Get Quote
+
+            .modal.hidden
+                button.btn--close-modal ×
+                h3.heading-three CONTACT US
+                h2.heading-two Get a sample*, share your feedback
+                span *Free 1 Kg sample for all grades 
+                    em (shipping cost and tax on buyer expenses)
+                div(class='modal__container')
+                    div(class='modal__download')
+                        span.highlight Download Section
+                        a(href='/nutmeg/CelexportCompanyProfile.pdf' target='_blank') Company Profile
+                        a(href='/nutmeg/CelexportBusinessLicense.pdf' target='_blank') Business License
+                        a(href='/nutmeg/CelexportNutmegCatalog.pdf' target='_blank') Nutmeg Product Catalog
+                        a(href='/nutmeg/CelexportReportOfAnalysis1.pdf' target='_blank') Nutmeg Report of Analysis 1
+                        a(href='/nutmeg/CelexportReportOfAnalysis2.pdf' target='_blank') Nutmeg Report of Analysis 2
+                    form(class='modal__form')
+                        label Full Name
+                        input#fullName(type='text' required)
+                        label Company Name
+                        input#companyName(type='text' required)
+                        label Email Address
+                        input#email(type='email' required)
+                        label Sample
+                        select#sample(required)
+                            option(value) Select Nutmeg Grade
+                            option(value='abcd') ABCD
+                            option(value='ss') SS
+                            option(value='bwp') BWP
+                            option(value='all') All Grades
+                            option(value='none') None (I have other enquiry)
+                        //- label Your Message
+                        //- textarea#message(name='message' class=)
+                        button.btnSubmit.btnContact Submit
+            .overlay.hidden
